@@ -33,6 +33,7 @@ nav {
     margin: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
 }
 
 .nav-item {
@@ -73,6 +74,19 @@ nav {
     transform: scale(1.05);
 }
 
+/* Container for city titles and restaurants */
+.city-container {
+    margin-bottom: 30px; /* Adjust this value to add space below the container */
+}
+
+/* Title styling */
+.city-title {
+    margin-bottom: 15px; /* Adjust this value to add space below the city title */
+    font-size: 1.5em; /* Example font size */
+    color: #ff5722; /* Example color */
+}
+
+
 /* Main content styles */
 main {
     padding: 20px;
@@ -85,6 +99,7 @@ main {
 
 .details h4 {
     color: #ff5722;
+    margin-bottom: 20px; /* Add margin to separate it from the content below */
 }
 
 .details p {
@@ -103,15 +118,93 @@ footer {
     width: 100%;
 }
 
+.restaurant-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 30px 0; /* Add margin to separate it from other items */
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.restaurant-item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.restaurant-item h4 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.restaurant-item p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+/* Margin adjustments for larger screens */
+@media (min-width: 769px) {
+    .category-button {
+        margin-bottom: 20px; /* Adjust the value as needed */
+    }
+
+    .city-title {
+        margin-top: 20px; /* Adjust the value as needed */
+    }
+}
+
+
 /* Responsive design */
 @media (max-width: 768px) {
     .nav-item {
         padding: 10px;
         margin: 0 5px;
+        flex: 1 0 100%; /* Make nav items full width on small screens */
     }
 
     .category-button {
         padding: 8px 15px;
         margin: 3px;
+        flex: 1 0 48%; /* Ensure buttons are 48% width to fit two in a row */
+    }
+
+    main {
+        padding: 10px;
+        box-shadow: none; /* Remove shadow for cleaner look on small screens */
+    }
+
+    .restaurant-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .restaurant-item img {
+        max-width: 100%;
+    }
+
+    .restaurant-item h4, .restaurant-item p {
+        font-size: 1em;
+    }
+
+    .details p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .category-button {
+        padding: 5px 10px;
+        margin: 2px;
+        flex: 1 0 100%; /* Make buttons full width on very small screens */
     }
 }
