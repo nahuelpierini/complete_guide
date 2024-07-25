@@ -69,9 +69,40 @@ nav {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.button-nahuel {
+    background-color: #a18901; /* Amarillo para Nahuel */
+    color: #fff;
+}
+
+.button-xelu {
+    background-color: #a18901; /* Morado para Xelu */
+    color: #fff;
+}
+
+.button-fire-department {
+    background-color: #a7231a; /* Rojo para Fire Department */
+    color: #fff;
+}
+
+.button-police {
+    background-color: #054a81e0; /* Azul para Police */
+    color: #fff;
+}
+
+.button-emergencies {
+    background-color: #888888a9; /* Verde para Emergencies */
+    color: #fff;
+}
+
+.button-guardia-civil {
+    background-color: #0b8807; /* Verde para Guardia Civil */
+    color: #fff;
+}
+
 .category-button:hover {
-    background-color: #e64a19;
+
     transform: scale(1.05);
+    opacity: 0.9;
 }
 
 /* Container for city titles and restaurants */
@@ -84,6 +115,7 @@ nav {
     margin-bottom: 15px; /* Adjust this value to add space below the city title */
     font-size: 1.5em; /* Example font size */
     color: #ff5722; /* Example color */
+    text-align: center;
 }
 
 
@@ -97,6 +129,32 @@ main {
     border-radius: 8px;
 }
 
+.details-content {
+    text-align: center; /* Centrar el texto horizontalmente */
+    padding: 10px; /* Espaciado alrededor del contenido */
+}
+
+.details-content h4 {
+    margin: 10px 0; /* Espaciado arriba y abajo del título */
+    font-size: 1.5em; /* Tamaño de fuente para el título */
+}
+
+.details-content p {
+    margin: 5px 0; /* Espaciado arriba y abajo del párrafo */
+    font-size: 1.2em; /* Tamaño de fuente para el párrafo */
+}
+
+.details-content a {
+    text-decoration: none; /* Quitar subrayado del enlace */
+    color: #007bff; /* Color del enlace */
+    font-weight: bold; /* Negrita para el texto del enlace */
+}
+
+.details-content a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+
 .details h4 {
     color: #ff5722;
     margin-bottom: 20px; /* Add margin to separate it from the content below */
@@ -106,6 +164,33 @@ main {
     font-size: 1.1em;
     line-height: 1.6;
 }
+
+.festival-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px; /* Añadir padding para espacio interno */
+    margin: 20px 0; /* Ajustar margen para separación externa */
+    text-align: center; /* Centrar contenido */
+}
+
+.festival-item img {
+    width: 300px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    object-fit: cover; /* Cubre el área del contenedor sin deformar */
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.festival-item h4 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.festival-item p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
 
 /* Footer styles */
 footer {
@@ -121,19 +206,15 @@ footer {
 .restaurant-item {
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px;
-    margin: 30px 0; /* Add margin to separate it from other items */
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    grid-gap: 20px;
-    align-items: center;
+    padding: 20px; /* Añadir padding para espacio interno */
+    margin: 20px 0; /* Ajustar margen para separación externa */
+    text-align: center; /* Centrar contenido */
 }
 
 .restaurant-item img {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    object-fit: cover;
+    width: 300px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    object-fit: cover; /* Cubre el área del contenedor sin deformar */
     border-radius: 5px;
     margin: 0 auto;
 }
@@ -146,6 +227,61 @@ footer {
 .restaurant-item p {
     margin: 5px 0;
     font-size: 1em;
+}
+
+.specialty, .ranking {
+    font-family: 'Arial', sans-serif; /* Puedes cambiar a otra fuente si prefieres */
+    font-size: 1.1em; /* Aumentar ligeramente el tamaño de la fuente */
+    color: #333; /* Color oscuro para buen contraste */
+    margin: 5px 0; /* Espaciado entre elementos */
+}
+
+.restaurant-button {
+    display: inline-block;
+    background-color: #ff5722; /* Fondo del botón */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animaciones de transición */
+}
+
+.restaurant-button:hover {
+    background-color: #e64a19; /* Color más oscuro en hover */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño en hover */
+}
+
+.restaurant-button:active {
+    background-color: #d84315; /* Color más oscuro al hacer clic */
+    transform: scale(1.02); /* Reducción del tamaño al hacer clic */
+}
+
+.festival-button {
+    display: inline-block;
+    background-color: #ff5722; /* Fondo del botón */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animaciones de transición */
+}
+
+.festival-button:hover {
+    background-color: #e64a19; /* Color más oscuro en hover */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño en hover */
+}
+
+.festival-button:active {
+    background-color: #d84315; /* Color más oscuro al hacer clic */
+    transform: scale(1.02); /* Reducción del tamaño al hacer clic */
 }
 
 /* Margin adjustments for larger screens */
