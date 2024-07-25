@@ -9,7 +9,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #ff5722;
+    background-color: #227affcc;
     color: white;
     padding: 20px;
     text-align: center;
@@ -58,7 +58,7 @@ nav {
 }
 
 .category-button {
-    background-color: #ff5722;
+    background-color: #227affa4;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -114,7 +114,7 @@ nav {
 .city-title {
     margin-bottom: 15px; /* Adjust this value to add space below the city title */
     font-size: 1.5em; /* Example font size */
-    color: #ff5722; /* Example color */
+    color: #227aff; /* Example color */
     text-align: center;
 }
 
@@ -146,7 +146,7 @@ main {
 
 .details-content a {
     text-decoration: none; /* Quitar subrayado del enlace */
-    color: #007bff; /* Color del enlace */
+    color: #000000; /* Color del enlace */
     font-weight: bold; /* Negrita para el texto del enlace */
 }
 
@@ -156,7 +156,7 @@ main {
 
 
 .details h4 {
-    color: #ff5722;
+    color: #000000;
     margin-bottom: 20px; /* Add margin to separate it from the content below */
 }
 
@@ -194,7 +194,7 @@ main {
 
 /* Footer styles */
 footer {
-    background-color: #ff5722;
+    background-color: #227affcc;
     color: white;
     padding: 10px;
     text-align: center;
@@ -238,7 +238,7 @@ footer {
 
 .restaurant-button {
     display: inline-block;
-    background-color: #ff5722; /* Fondo del botón */
+    background-color: #227aff; /* Fondo del botón */
     color: #fff; /* Color del texto */
     padding: 10px 20px;
     margin-top: 10px;
@@ -251,18 +251,18 @@ footer {
 }
 
 .restaurant-button:hover {
-    background-color: #e64a19; /* Color más oscuro en hover */
+    background-color: #227aff; /* Color más oscuro en hover */
     transform: scale(1.05); /* Aumenta ligeramente el tamaño en hover */
 }
 
 .restaurant-button:active {
-    background-color: #d84315; /* Color más oscuro al hacer clic */
+    background-color: #227aff; /* Color más oscuro al hacer clic */
     transform: scale(1.02); /* Reducción del tamaño al hacer clic */
 }
 
 .festival-button {
     display: inline-block;
-    background-color: #ff5722; /* Fondo del botón */
+    background-color: #227aff; /* Fondo del botón */
     color: #fff; /* Color del texto */
     padding: 10px 20px;
     margin-top: 10px;
@@ -275,12 +275,12 @@ footer {
 }
 
 .festival-button:hover {
-    background-color: #e64a19; /* Color más oscuro en hover */
+    background-color: #227aff; /* Color más oscuro en hover */
     transform: scale(1.05); /* Aumenta ligeramente el tamaño en hover */
 }
 
 .festival-button:active {
-    background-color: #d84315; /* Color más oscuro al hacer clic */
+    background-color: #227aff; /* Color más oscuro al hacer clic */
     transform: scale(1.02); /* Reducción del tamaño al hacer clic */
 }
 
